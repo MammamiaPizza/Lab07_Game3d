@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dmk83dguluy41"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="prefab" type="Node3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
