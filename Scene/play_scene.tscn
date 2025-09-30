@@ -146,10 +146,10 @@ theme_override_font_sizes/font_size = 60
 text = "Go to the Car!"
 
 [node name="Label3" type="Label" parent="Control/CanvasLayer"]
-offset_left = 785.0
-offset_top = 525.0
-offset_right = 1140.0
-offset_bottom = 639.0
+offset_left = 1293.0
+offset_top = 826.0
+offset_right = 1648.0
+offset_bottom = 940.0
 theme_override_font_sizes/font_size = 24
 text = "W,A,S,D to Control Movement
 M1 to collect paper
