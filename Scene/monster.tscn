@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://55qniu1dxp3q"]
+
+[ext_resource type="Script" uid="uid://b1h17g4u1av3n" path="res://Script/monster.gd" id="1_4f2yx"]
+[ext_resource type="PackedScene" uid="uid://b3j7033m463n0" path="res://Scene/Model/enemy_tonnel.tscn" id="1_xxklr"]
+[ext_resource type="AudioStream" uid="uid://4vble2ypeoc4" path="res://Asset/walking-on-grass-381887.mp3" id="3_wwmrk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4f2yx"]
+size = Vector3(0.7664032, 1.7936254, 0.9620056)
+
+[node name="Monster" type="CharacterBody3D" groups=["Entity"]]
+script = ExtResource("1_4f2yx")
+
+[node name="Node3D" type="Node3D" parent="." groups=["Entity"]]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 1.4983432, 0)
+
+[node name="enemy_tonnel" parent="Node3D" instance=ExtResource("1_xxklr")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.42613447, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." groups=["Entity"]]
+transform = Transform3D(0.69, 0, 0, 0, 0.69, 0, 0, 0, 0.69, -0.060190342, 0.80727863, 0.022273403)
+shape = SubResource("BoxShape3D_4f2yx")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_wwmrk")
+volume_db = -10.0

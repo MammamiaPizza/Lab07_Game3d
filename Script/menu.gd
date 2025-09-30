@@ -1,6 +1,6 @@
 extends Control
 
-@export var playscene : PackedScene
+@export var playscene : PackedScene = load("res://Scene/play_scene.tscn")
 
 
 func _on_button_pressed() -> void:
@@ -9,3 +9,6 @@ func _on_button_pressed() -> void:
 
 func _on_button_2_pressed() -> void:
 	get_tree().quit()
+
+func cleargame():
+	$CanvasLayer/Label2.show()

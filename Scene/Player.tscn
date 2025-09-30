@@ -1,7 +1,68 @@
-[gd_scene format=3 uid="uid://dmk83dguluy41"]
+[gd_scene load_steps=7 format=3 uid="uid://dmk83dguluy41"]
+
+[ext_resource type="Script" uid="uid://cnm4us184q0" path="res://Script/player.gd" id="1_6l3be"]
+[ext_resource type="AudioStream" uid="uid://4vble2ypeoc4" path="res://Asset/walking-on-grass-381887.mp3" id="2_3eeal"]
+[ext_resource type="AudioStream" uid="uid://egiapeow6xsx" path="res://Asset/Paper crumble - Sound effects.mp3" id="3_jvxg0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_j8lcb"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6l3be"]
+radius = 0.46289063
+height = 1.9852905
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j8lcb"]
+radius = 0.60302734
+height = 2.0996094
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
+collision_mask = 3
+script = ExtResource("1_6l3be")
 
 [node name="prefab" type="Node3D" parent="."]
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="prefab"]
+mesh = SubResource("CapsuleMesh_j8lcb")
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0073547363, 0)
+shape = SubResource("CapsuleShape3D_6l3be")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0068359375, 0)
+shape = SubResource("CapsuleShape3D_j8lcb")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2876925, 0)
+stream = ExtResource("2_3eeal")
+volume_db = -20.0
+max_db = 1.0
+max_distance = 2.0
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.53259945, -0.49181187)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+fov = 64.6
+
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.067637146)
+target_position = Vector3(0, 0, -1.405)
+collision_mask = 3
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Head/Camera3D"]
+light_energy = 6.0
+spot_range = 100.0
+spot_attenuation = 1.2
+spot_angle = 50.0
+
+[node name="AudioListener3D" type="AudioListener3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.53259945, 0.49181187)
+current = true
+
+[node name="collect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jvxg0")
+volume_db = -20.0
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

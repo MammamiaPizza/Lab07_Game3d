@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2iqolpmf33b8"]
+
+[ext_resource type="PackedScene" uid="uid://cajbnm2f6rth5" path="res://Scene/german_car.tscn" id="1_strog"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jvosb"]
+size = Vector3(1.9642334, 1.6626587, 5.2768555)
+
+[node name="StaticBody3D" type="StaticBody3D" groups=["car"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." groups=["car"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009094238, 0.85336304, -0.005126953)
+shape = SubResource("BoxShape3D_jvosb")
+
+[node name="GermanCar" parent="." instance=ExtResource("1_strog")]
