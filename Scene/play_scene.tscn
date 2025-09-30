@@ -9,8 +9,8 @@
 [ext_resource type="Script" uid="uid://2juaclm8gc1n" path="res://addons/simplegrasstextured/grass.gd" id="4_f6olp"]
 [ext_resource type="PackedScene" uid="uid://55qniu1dxp3q" path="res://Scene/monster.tscn" id="4_idj2y"]
 [ext_resource type="PackedScene" uid="uid://d2iqolpmf33b8" path="res://Scene/Car.tscn" id="8_026gu"]
-[ext_resource type="AudioStream" uid="uid://cky0syybr8q8k" path="res://Asset/Night & Midnight Sound Effect.mp3" id="10_e2o3g"]
-[ext_resource type="AudioStream" uid="uid://7j7570tyfxdw" path="res://Asset/Untitled Project.mp3" id="10_qt1y7"]
+[ext_resource type="AudioStream" uid="uid://c3bbtvc5o3sy" path="res://Asset/Untitled Project.ogg" id="10_qt1y7"]
+[ext_resource type="AudioStream" uid="uid://ba7s5fxmn1pol" path="res://Asset/Night & Midnight Sound Effect.ogg" id="11_yhgoa"]
 
 [sub_resource type="Sky" id="Sky_idj2y"]
 
@@ -170,7 +170,7 @@ stream = ExtResource("10_qt1y7")
 volume_db = 20.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("10_e2o3g")
+stream = ExtResource("11_yhgoa")
 volume_db = 2.0
 autoplay = true
 

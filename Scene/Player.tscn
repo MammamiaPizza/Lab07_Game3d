@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dmk83dguluy41"]
 
 [ext_resource type="Script" uid="uid://cnm4us184q0" path="res://Script/player.gd" id="1_6l3be"]
-[ext_resource type="AudioStream" uid="uid://4vble2ypeoc4" path="res://Asset/walking-on-grass-381887.mp3" id="2_3eeal"]
-[ext_resource type="AudioStream" uid="uid://egiapeow6xsx" path="res://Asset/Paper crumble - Sound effects.mp3" id="3_jvxg0"]
+[ext_resource type="AudioStream" uid="uid://blwiaduuqjiag" path="res://Asset/walking-on-grass-381887.ogg" id="2_3eeal"]
+[ext_resource type="AudioStream" uid="uid://dwmpetsr7nykq" path="res://Asset/Paper crumble - Sound effects.ogg" id="3_jvxg0"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_j8lcb"]
 

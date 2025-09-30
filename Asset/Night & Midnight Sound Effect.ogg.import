@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ba7s5fxmn1pol"
+path="res://.godot/imported/Night & Midnight Sound Effect.ogg-cb5f2426eebaa2a3fe484217f484f3c2.oggvorbisstr"
+
+[deps]
+
+source_file="res://Asset/Night & Midnight Sound Effect.ogg"
+dest_files=["res://.godot/imported/Night & Midnight Sound Effect.ogg-cb5f2426eebaa2a3fe484217f484f3c2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

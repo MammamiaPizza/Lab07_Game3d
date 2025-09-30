@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b1h17g4u1av3n" path="res://Script/monster.gd" id="1_4f2yx"]
 [ext_resource type="PackedScene" uid="uid://b3j7033m463n0" path="res://Scene/Model/enemy_tonnel.tscn" id="1_xxklr"]
-[ext_resource type="AudioStream" uid="uid://4vble2ypeoc4" path="res://Asset/walking-on-grass-381887.mp3" id="3_wwmrk"]
+[ext_resource type="AudioStream" uid="uid://blwiaduuqjiag" path="res://Asset/walking-on-grass-381887.ogg" id="3_wwmrk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4f2yx"]
 size = Vector3(0.7664032, 1.7936254, 0.9620056)

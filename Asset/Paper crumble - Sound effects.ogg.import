@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dwmpetsr7nykq"
+path="res://.godot/imported/Paper crumble - Sound effects.ogg-2d7c29534cab8b2d9963a9325012ebe7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Asset/Paper crumble - Sound effects.ogg"
+dest_files=["res://.godot/imported/Paper crumble - Sound effects.ogg-2d7c29534cab8b2d9963a9325012ebe7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
