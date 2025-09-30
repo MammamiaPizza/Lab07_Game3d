@@ -138,23 +138,25 @@ text = "Page: "
 
 [node name="Label2" type="Label" parent="Control/CanvasLayer"]
 visible = false
-offset_left = 2.0
-offset_top = 86.0
-offset_right = 401.0
-offset_bottom = 169.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -399.0
+offset_bottom = 83.0
+grow_horizontal = 0
 theme_override_font_sizes/font_size = 60
 text = "Go to the Car!"
 
 [node name="Label3" type="Label" parent="Control/CanvasLayer"]
-anchors_preset = -1
-anchor_left = 0.822
-anchor_top = 0.878
-anchor_right = 0.822
-anchor_bottom = 0.878
-offset_left = -177.94403
-offset_top = -56.94403
-offset_right = 177.05597
-offset_bottom = 57.05597
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -355.0
+offset_top = -114.0
+grow_horizontal = 0
+grow_vertical = 0
 theme_override_font_sizes/font_size = 24
 text = "W,A,S,D to Control Movement
 M1 to collect paper
@@ -162,10 +164,17 @@ Shift to sprint"
 
 [node name="Label4" type="Label" parent="Control/CanvasLayer"]
 visible = false
-offset_left = 313.0
-offset_top = 262.0
-offset_right = 769.0
-offset_bottom = 339.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -228.0
+offset_top = -38.5
+offset_right = 228.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_font_sizes/font_size = 56
 text = "Cant Escape now"
 
